@@ -58,7 +58,9 @@ h2 span {
 
 .group p {
     color: #fff;
-    font-size: 1.05em;;
+    font-size: 1.05em;
+    animation:slide-up 1s;
+    -webkit-animation:slide-up 1s;
 }
 
 .bottom {
@@ -81,6 +83,8 @@ h4 {
     padding: 0 15px;
     margin-top: 40px;
     display: inline-flex;
+    animation:slide-up 1s;
+    -webkit-animation:slide-up 1s;
 }
 .contactInfo {
     position: relative;
@@ -207,4 +211,15 @@ h4 {
 .my-float{
 	margin-top:17px;
     font-size: 1.6em;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0.2;
+        line-height: 200px;
+    }
+    to {
+        opacity: 1;
+        line-height: 25px;
+    }
 }
